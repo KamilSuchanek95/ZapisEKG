@@ -53,7 +53,7 @@
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.4, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.7.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.23, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.25, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.0.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-like (v0.3.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
@@ -70,7 +70,7 @@
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.2.4, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.4, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.0.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.11.4, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
@@ -91,7 +91,7 @@
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.12.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.0.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.20.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
@@ -103,7 +103,7 @@
     <orderEntry type="library" scope="PROVIDED" name="web-console (v3.6.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.3, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="xpath (v3.0.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v3.1.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
