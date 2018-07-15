@@ -1,0 +1,2 @@
+class Przebiegi < ApplicationRecord
+end

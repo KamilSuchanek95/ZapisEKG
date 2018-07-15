@@ -1,0 +1,31 @@
+<h1>Edycja</h1>
+
+<% if @save %>
+  <% if @save.errors %>
+    <ul>
+      <% @save.errors.full_messages.each do |err| %>
+        <li>
+          <%= err %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+
+<%= form_for "user", :url => { :action => "edit" } do |f| %>
+
+  <%= f.label :first_name, "Imię" %><br>
+  <%= f.text_field "first_name", :placeholder => @current_user.first_name %><br><br>
+
+  <%= f.label "last_name", "Nazwisko" %><br>
+  <%= f.text_field "last_name", :placeholder => @current_user.last_name -%><br><br>
+
+  <%= f.label "pesel", "Pesel" %><br>
+  <%= f.text_field "pesel", :placeholder => @current_user.pesel.to_s %><br><br>
+
+  <%= f.label "role", "Rola: patient/doctor/admin" %><br>
+  <%= f.select "role", ["patient", "doctor", "admin"], {},:style => "height:30px; width:100px" %><br>
+  <br><br><br><br>
+  <%= f.submit "Zapisz zmiany" %>
+  <p><a href="/user/index">Powrót</a></p>
+
+<% end %>

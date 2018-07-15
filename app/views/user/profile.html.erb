@@ -1,0 +1,25 @@
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<h1>Profil użytkownika <%=@user.first_name%> <%=@user.last_name%></h1>
+<a><%@signal%></a>
+<p><a href="/user/index">Powrót.</a></p>
+<p><a href="/user/start">Powrót do strony głównej.</a></p>
+
+<% javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+
+
+<% max = @signal.count - 1%>
+
+<% (0..max).each do |x| %>
+    <% @pozycja = @signal[x] %>
+    <% signal = @pozycja.zapis %>
+    <% data_line_chart = [] %>
+    <% mytime = 0 %>
+    <% signal.each do |data| %>
+    <% table = [] %>
+    <% table << mytime %>
+    <% table << data %>
+    <% mytime += 1 %>
+    <% data_line_chart << table %>
+  <% end %>
+  <p> <%= line_chart data_line_chart, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
+<% end %>

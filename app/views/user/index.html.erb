@@ -1,0 +1,33 @@
+<h1>Users</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Imie</th>
+    <th>Nazwisko</th>
+    <th>Login</th>
+    <th>Pesel</th>
+    <th>Rola</th>
+    <th>Edycja</th>
+    <th>Profile</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%=h user.id %></td>
+      <td><%=h user.first_name %></td>
+      <td><%=h user.last_name %></td>
+      <td><%=h user.login %></td>
+      <td><%=h user.pesel %></td>
+      <td><%=h user.role %></td>
+      <td><%=h link_to 'Edytuj', user_edit_path(:ciaramba => user.id) %><td>
+      <td><%=h link_to 'Profil', user_profile_path(:ciaramba => user.id) %><td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<p><a href="/user/start">Powrót do strony głownej.</a></p>
