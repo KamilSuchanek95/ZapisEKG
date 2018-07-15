@@ -13,20 +13,17 @@
 
 <%= form_for "user", :url => { :action => "edit" } do |f| %>
 
-  <%= f.label "id", "Id" %><br>
-  <%= f.number_field "id", :placeholder => @current_user.id %><br><br>
-
   <%= f.label "first_name", "Imię" %><br>
-  <%= f.text_field "first_name", :placeholder => @current_user.first_name %><br><br>
+  <%= f.text_field "first_name", :value => @current_user.first_name %><br><br>
 
   <%= f.label "last_name", "Nazwisko" %><br>
-  <%= f.text_field "last_name", :placeholder => @current_user.last_name -%><br><br>
+  <%= f.text_field "last_name", :value => @current_user.last_name -%><br><br>
 
   <%= f.label "pesel", "Pesel" %><br>
-  <%= f.text_field "pesel", :placeholder => @current_user.pesel.to_s %><br><br>
+  <%= f.text_field "pesel", :value => @current_user.pesel.to_s %><br><br>
 
-  <%= f.label "role", "Rola: patient/doctor/admin" %><br>
-  <%= f.select "role", ["patient", "doctor", "admin"], {},:style => "height:30px; width:100px" %><br>
+  <%= f.label "role", "Rola" %><br>
+  <%= f.select "role", ["patient", "doctor", "admin"], :selected => @current_user.role,:style => "height:30px; width:100px" %><br>
   <br><br><br><br>
   <%= f.submit "Zapisz zmiany" %>
   <p><a href="/user/index">Powrót</a></p>

@@ -95,7 +95,6 @@ class UserController < ApplicationController
     if params["user"]
 
       data = {
-          "id" => params["user"]["id"],
           "first_name" => params["user"]["first_name"],
           "last_name" => params["user"]["last_name"],
           "pesel" => params["user"]["pesel"],
