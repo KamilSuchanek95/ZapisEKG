@@ -57,7 +57,6 @@ class UserController < ApplicationController
 
   end
 
-
   def logout
 
     if session[:user_id]
@@ -87,19 +86,28 @@ class UserController < ApplicationController
   end
 
   def edit
-    @current_user = User.find(params[:ciaramba])
+
+    if params[:ciaramba]
+      @current_user = User.find(params[:ciaramba])
+      @ciaramba = :ciaramba
+    end
+
     if params["user"]
 
       data = {
+          "id" => params["user"]["id"],
           "first_name" => params["user"]["first_name"],
           "last_name" => params["user"]["last_name"],
-          "role" => params["user"]["role"],
-          "pesel" => params["user"]["pesel"]
+          "pesel" => params["user"]["pesel"],
+          "role" => params["user"]["role"]
       }
-      @save = User.update(data)
 
-      if @save.save
+      @user = User.find(params["user"][:id])
 
+      if @user.update_attributes(data)
+        redirect_to :action => "index"
+      else
+        render 'edit'
       end
     end
 

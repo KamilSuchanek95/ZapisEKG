@@ -13,7 +13,10 @@
 
 <%= form_for "user", :url => { :action => "edit" } do |f| %>
 
-  <%= f.label :first_name, "Imię" %><br>
+  <%= f.label "id", "Id" %><br>
+  <%= f.number_field "id", :placeholder => @current_user.id %><br><br>
+
+  <%= f.label "first_name", "Imię" %><br>
   <%= f.text_field "first_name", :placeholder => @current_user.first_name %><br><br>
 
   <%= f.label "last_name", "Nazwisko" %><br>
