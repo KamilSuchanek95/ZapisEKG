@@ -4,7 +4,7 @@
 <p><a href="/user/index">Powrót.</a></p>
 <p><a href="/user/start">Powrót do strony głównej.</a></p>
 
-<% javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+
 
 
 <% max = @signal.count - 1%>
@@ -17,9 +17,13 @@
     <% signal.each do |data| %>
     <% table = [] %>
     <% table << mytime %>
-    <% table << data %>
-    <% mytime += 1 %>
+    <% table << data-500 %>
+    <% mytime += 5 %>
     <% data_line_chart << table %>
   <% end %>
-  <p> <%= line_chart data_line_chart, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
+<p> <%= line_chart data_line_chart, curve: false, points: false,  xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
 <% end %>
+
+
+<div id="chart-1" style="height: 300px"></div>
+
