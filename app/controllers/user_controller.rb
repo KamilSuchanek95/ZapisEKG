@@ -72,6 +72,8 @@ class UserController < ApplicationController
 
     @signal = Przebiegi.where(user_id: @user.id).all
 
+
+
   end
 
   def index

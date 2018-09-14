@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="ZapisEKG_development@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
     <root id="1">
-      <ServerVersion>9.5.13</ServerVersion>
+      <ServerVersion>9.5.14</ServerVersion>
     </root>
     <database id="2" parent="1" name="Rysowanka_development">
       <ObjectId>16776</ObjectId>
+      <Owner>ciarambola</Owner>
     </database>
     <database id="3" parent="1" name="Rysowanka_test">
       <ObjectId>16777</ObjectId>
+      <Owner>ciarambola</Owner>
     </database>
     <database id="4" parent="1" name="ZapisEKG_development">
       <ObjectId>16684</ObjectId>
+      <Owner>ciarambola</Owner>
       <IntrospectionStateNumber>24</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
     <database id="5" parent="1" name="ZapisEKG_test">
       <ObjectId>16685</ObjectId>
+      <Owner>ciarambola</Owner>
     </database>
     <database id="6" parent="1" name="postgres">
       <ObjectId>12413</ObjectId>
       <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
     </database>
     <role id="7" parent="1" name="ciarambola">
       <ObjectId>16384</ObjectId>
@@ -45,26 +50,32 @@
     </role>
     <schema id="9" parent="4" name="information_schema">
       <ObjectId>12121</ObjectId>
+      <Owner>postgres</Owner>
     </schema>
     <schema id="10" parent="4" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
+      <Owner>postgres</Owner>
     </schema>
     <schema id="11" parent="4" name="pg_temp_1">
       <ObjectId>11816</ObjectId>
+      <Owner>postgres</Owner>
     </schema>
     <schema id="12" parent="4" name="pg_toast">
       <ObjectId>99</ObjectId>
       <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>postgres</Owner>
     </schema>
     <schema id="13" parent="4" name="pg_toast_temp_1">
       <ObjectId>11817</ObjectId>
+      <Owner>postgres</Owner>
     </schema>
     <schema id="14" parent="4" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-07-15.22:33:34.407</IntrospectionTimestamp>
-      <IntrospectionStateNumber>821</IntrospectionStateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2018-09-14.14:06:47.885</IntrospectionTimestamp>
+      <IntrospectionStateNumber>835</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -120,7 +131,8 @@
     </table>
     <table id="26" parent="14" name="users">
       <ObjectId>16704</ObjectId>
-      <StateNumber>791</StateNumber>
+      <Owner>ciarambola</Owner>
+      <StateNumber>835</StateNumber>
     </table>
     <column id="27" parent="23" name="key">
       <Position>1</Position>
@@ -247,9 +259,9 @@
     </column>
     <column id="46" parent="26" name="pesel">
       <Position>4</Position>
-      <DataType>numeric|0s</DataType>
-      <StateNumber>779</StateNumber>
-      <TypeId>1700</TypeId>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>835</StateNumber>
+      <TypeId>20</TypeId>
     </column>
     <column id="47" parent="26" name="login">
       <Position>5</Position>
