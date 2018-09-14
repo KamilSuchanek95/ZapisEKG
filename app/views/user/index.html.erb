@@ -4,8 +4,7 @@
   <thead>
 
   <tr>
-    <td class = "czerwony">Pole</td>
-    <td>Id</td>
+    <td class = "czerwony">Id</td>
     <td>Imie</td>
     <td>Nazwisko</td>
     <td>Login</td>
@@ -19,8 +18,7 @@
   <tbody>
   <% @users.each do |user| %>
     <tr>
-      <td class = "czerwony"></td>
-      <td><%=h user.id %></td>
+      <td class = "czerwony"><%=h user.id %></td>
       <td><%=h user.first_name %></td>
       <td><%=h user.last_name %></td>
       <td><%=h user.login %></td>

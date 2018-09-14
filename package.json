@@ -1,5 +1,7 @@
 {
   "name": "ZapisEKG",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "amcharts3": "^3.21.13"
+  }
 }
