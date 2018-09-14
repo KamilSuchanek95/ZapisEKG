@@ -82,12 +82,18 @@ class UserController < ApplicationController
     if user.patient?
       redirect_to :action => "start", :alert =>"Brak uprawnień!"
     end
-    @users = User.where.not(:id => id)
+    @users = User.all
 
 
   end
 
   def edit
+
+    id = session[:user_id]
+    user = User.find(id)
+    if !user.admin?
+      redirect_to :action => "index", :alert =>"Brak uprawnień!"
+    end
 
     if params[:ciaramba]
       @current_user = User.find(params[:ciaramba])
