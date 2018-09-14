@@ -15,8 +15,9 @@
     <% mytime += 5 %>
     <% @data_line_chart << table %>
   <% end %>
+  <div id="chartdiv">
   <p> <%= line_chart @data_line_chart, points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-<%end %>
+  </div><%end %>
 
 <table class="tabela">
   <thead>

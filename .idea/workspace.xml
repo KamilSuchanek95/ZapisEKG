@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e59e52e6-ad52-48db-ad8e-f05160e59727" name="Default" comment="heroku set.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/user.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/user_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/user_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/user/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/user/profile.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/profile.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/user/start.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/start.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -27,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ZapisEKG@ZapisEKG_development.rcov" NAME="ZapisEKG_development Coverage Results" MODIFIED="1536969049113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
+    <SUITE FILE_PATH="coverage/ZapisEKG@ZapisEKG_development.rcov" NAME="ZapisEKG_development Coverage Results" MODIFIED="1536969371101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@db_migrate__1_.rcov" NAME="db:migrate (1) Coverage Results" MODIFIED="1527697308521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@db_drop__ZapisEKG.rcov" NAME="db:drop: ZapisEKG Coverage Results" MODIFIED="1526905181453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@db_migrate__ZapisEKG.rcov" NAME="db:migrate: ZapisEKG Coverage Results" MODIFIED="1536929825875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
@@ -134,7 +124,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="32" />
-          <entry key="RHTML" value="1902" />
+          <entry key="RHTML" value="1916" />
           <entry key="Ruby" value="466" />
           <entry key="SCSS" value="128" />
           <entry key="Sass" value="70" />
@@ -160,7 +150,7 @@
         <counts>
           <entry key="Gemfile" value="93" />
           <entry key="cell" value="21" />
-          <entry key="erb" value="1902" />
+          <entry key="erb" value="1916" />
           <entry key="js" value="32" />
           <entry key="rb" value="373" />
           <entry key="sass" value="70" />
@@ -192,8 +182,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/user/profile.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+            <state relative-caret-position="285">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -613,12 +603,12 @@
       <workItem from="1536685389292" duration="3667000" />
       <workItem from="1536752331602" duration="19005000" />
       <workItem from="1536918465429" duration="3882000" />
-      <workItem from="1536922372876" duration="22863000" />
+      <workItem from="1536922372876" duration="23206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212913000" />
+    <option name="totallyTimeSpent" value="213256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user/profile.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+        <state relative-caret-position="285">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
