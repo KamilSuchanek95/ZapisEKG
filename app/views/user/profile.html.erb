@@ -3,7 +3,8 @@
 <a><%@signal%></a>
 <p><a href="/user/index">Powrót</a></p>
 <p><a href="/user/start">Powrót do strony głównej</a></p>
-
+<p><a><%= link_to 'Napisz wiadomość', user_message_path(:ciaramba => params[:ciaramba]) %>
+  </a></p>
 <%if @signal %>
 
     <% @data_line_chart = [] %>
@@ -20,20 +21,12 @@
     <% end %>
     <% size = @data_line_chart.size %>
     <% s = size/6 %>
-  <p> <%= line_chart @data_line_chart[0..s], scales: {
-      xAxes: [{
-                  gridLines: {
-                      drawOnChartArea: true,
-                      display: true,
-                      transpanent: false
-                  }
-              }]
-  }, points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[0..s], points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
   <p> <%= line_chart @data_line_chart[s+1..2*s], points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
   <p> <%= line_chart @data_line_chart[2*s+1..3*s], points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
   <p> <%= line_chart @data_line_chart[3*s+1..4*s], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
   <p> <%= line_chart @data_line_chart[4*s+1..5*s], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-  <p> <%= line_chart @data_line_chart[5*s+1..size], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[5*s+1..size-1], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
 
 <%end %>
 

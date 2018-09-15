@@ -14,6 +14,13 @@ class UserController < ApplicationController
       redirect_to :action => "new"
     end
 
+    @Messages = Message.find_by_receiver_id(@id)
+    if @Messages
+      @sender = User.find(@Messages.sender_id)
+    end
+
+
+
   end
 
   def new
@@ -32,9 +39,10 @@ class UserController < ApplicationController
       @save = User.new(data)
 
       if @save.save
-      session[:user_id] = @save.id
-      redirect_to :action => "start"
+        session[:user_id] = @save.id
+        redirect_to :action => "start"
       end
+
     end
 
   end
@@ -83,6 +91,7 @@ class UserController < ApplicationController
   end
 
   def index
+
     id = session[:user_id]
     user = User.find(id)
     if user.patient?
@@ -90,10 +99,11 @@ class UserController < ApplicationController
     end
     @users = User.all
 
-
   end
 
   def edit
+
+    redirect_to :action => "index" if !params[:ciaramba]
 
     id = session[:user_id]
     user = User.find(id)
@@ -106,16 +116,16 @@ class UserController < ApplicationController
       @ciaramba = :ciaramba
     end
 
-    if params["user"]
+    if params["edit"]
 
       data = {
-          "first_name" => params["user"]["first_name"],
-          "last_name" => params["user"]["last_name"],
-          "pesel" => params["user"]["pesel"],
-          "role" => params["user"]["role"]
+          "first_name" => params["edit"]["first_name"],
+          "last_name" => params["edit"]["last_name"],
+          "pesel" => params["edit"]["pesel"],
+          "role" => params["edit"]["role"]
       }
 
-      @user = User.find(params["user"][:id])
+      @user = User.find(params[:ciaramba])
 
       if @user.update_attributes(data)
         redirect_to :action => "index"
@@ -126,5 +136,32 @@ class UserController < ApplicationController
 
 
   end
+
+  def message
+
+    redirect_to :action => 'profile' if !params[:ciaramba]
+
+
+    @ciaramba = User.find(params[:ciaramba])
+
+
+    if params["Message"]
+
+      data = {
+          "text" => params["Message"]["text"],
+          "sender_id" => session[:user_id],
+          "receiver_id" => params[:ciaramba]
+      }
+
+      @saveMessage = Message.new(data)
+
+      if @saveMessage
+        redirect_to user_profile_path(:ciaramba => params[:ciaramba])
+      end
+
+    end
+
+
+end
 
 end

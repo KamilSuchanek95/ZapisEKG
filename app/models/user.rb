@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :przebiegi
+  has_many :messages
   enum role: [:patient, :doctor, :admin]
   after_initialize :set_default_role, :if => :new_record?
 

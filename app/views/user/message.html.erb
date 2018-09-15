@@ -1,0 +1,24 @@
+<h1>Wyślij wiadomość do <%= @ciaramba.first_name %> <%= @ciaramba.last_name %></h1>
+
+<%= link_to 'Powrót', :back%>
+
+<% if @saveMessage %>
+  <% if @saveMessage.errors %>
+    <ul>
+      <% @saveMessage.errors.full_messages.each do |err| %>
+        <li>
+          <%= err %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+
+<%= form_for "Message", :url => { :action => "message" }, :remote => true do |f| %>
+
+  <%= f.label "Treść wiadomości:" %><br>
+  <%= f.text_field "text" %><br>
+
+  <%= f.submit "Wyślij!"%>
+
+
+<% end %>

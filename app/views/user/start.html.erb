@@ -2,3 +2,26 @@
 <p></p>
 <p><a href="/user/logout">Wyloguj</a></p>
 <p><a href="/user/index">Lista Użytkowników</a></p>
+<p> Wiadomości: </p>
+<% if @Messages %>
+
+  <table class="tabela">
+    <thead>
+
+    <tr>
+      <td class = "czerwony">Nadawca</td>
+      <td>Treść</td>
+      <td>Data</td>
+    </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class = "czerwony"><%=h @sender.first_name%> <%=h @sender.last_name %></td>
+        <td><%=h @Messages.text %></td>
+        <td><%=h @Messages.created_at %></td>
+      </tr>
+    </tbody>
+  </table>
+
+<% end %>
