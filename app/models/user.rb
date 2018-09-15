@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :electrocardiograms
+  has_many :przebiegi
   enum role: [:patient, :doctor, :admin]
   after_initialize :set_default_role, :if => :new_record?
 

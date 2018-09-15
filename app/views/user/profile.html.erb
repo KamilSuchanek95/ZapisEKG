@@ -3,27 +3,37 @@
 <a><%@signal%></a>
 <p><a href="/user/index">Powrót</a></p>
 <p><a href="/user/start">Powrót do strony głównej</a></p>
-<div id = "chartdiv"></div>
+
 <%if @signal %>
 
     <% @data_line_chart = [] %>
-    <% mytime = 0 %>
+  <% mytime = 0 %>
+  <% myS = Time.at(mytime).utc.strftime("%S:%L") %>
     <% rec = @signal1 %>
     <% rec.each do |data| %>
       <% table = [] %>
-      <% table << mytime %>
+      <% table << myS %>
       <% table << data - 500 %>
       <% mytime += 5 %>
+      <% myS = Time.at(mytime.to_f/1000).utc.strftime("%S:%L") %>
       <% @data_line_chart << table %>
     <% end %>
     <% size = @data_line_chart.size %>
     <% s = size/6 %>
-  <p> <%= line_chart @data_line_chart[0..s], points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-  <p> <%= line_chart @data_line_chart[s+1..2*s], points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-  <p> <%= line_chart @data_line_chart[2*s+1..3*s], points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-  <p> <%= line_chart @data_line_chart[3*s+1..4*s], points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-  <p> <%= line_chart @data_line_chart[4*s+1..5*s], points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
-  <p> <%= line_chart @data_line_chart[5*s+1..size], points: false, discrete: true, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[0..s], scales: {
+      xAxes: [{
+                  gridLines: {
+                      drawOnChartArea: true,
+                      display: true,
+                      transpanent: false
+                  }
+              }]
+  }, points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[s+1..2*s], points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[2*s+1..3*s], points: false, xtitle: "czas [s:ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[3*s+1..4*s], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[4*s+1..5*s], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
+  <p> <%= line_chart @data_line_chart[5*s+1..size], points: false, xtitle: "czas [ms]", ytitle: "amplituda [mV]" %> </p>
 
 <%end %>
 
