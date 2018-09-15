@@ -35,6 +35,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v5.2.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.2.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.5.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="amcharts-js (v0.1.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="amcharts.rb (v3.11.2.17, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="archive-zip (v0.11.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v9.0.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
@@ -58,13 +59,13 @@
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.7.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.25, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="font-awesome-rails (v4.7.0.4, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fusioncharts-rails (v0.0.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.1.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-like (v0.3.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.7.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.3, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v6.0.1, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.2.2, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.0, RVM: ruby-2.4.1 [ZapisEKG]) [gem]" level="application" />

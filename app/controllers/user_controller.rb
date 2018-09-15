@@ -79,6 +79,7 @@ class UserController < ApplicationController
 
     end
 
+
   end
 
   def index

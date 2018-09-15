@@ -17,5 +17,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require chartkick
+//= require jquery-ui
 //= require amcharts
 //= require_tree .
