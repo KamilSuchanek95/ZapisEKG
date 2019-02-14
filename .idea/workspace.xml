@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e59e52e6-ad52-48db-ad8e-f05160e59727" name="Default" comment="heroku set.">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ZapisEKG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZapisEKG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/05a82097-a3d1-4292-aabb-ee24f942f434/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/05a82097-a3d1-4292-aabb-ee24f942f434/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14835c0e-9f4f-4c85-a8f7-af2004493fb4/storage_v2/_src_/database/ZapisEKG_test.o-8Isw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14835c0e-9f4f-4c85-a8f7-af2004493fb4/storage_v2/_src_/database/ZapisEKG_test.o-8Isw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/78790361-ee2e-46be-9b82-31588f0e5bc8/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/78790361-ee2e-46be-9b82-31588f0e5bc8/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48a2b43-a631-4d1c-b05b-1f46a0421a47/storage_v2/_src_/database/ZapisEKG_development.Co10Hg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48a2b43-a631-4d1c-b05b-1f46a0421a47/storage_v2/_src_/database/ZapisEKG_development.Co10Hg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d038bdbe-51d6-42c9-9df1-bbbd2f427642/storage_v2/_src_/database/ZapisEKG_development.Co10Hg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d038bdbe-51d6-42c9-9df1-bbbd2f427642/storage_v2/_src_/database/ZapisEKG_development.Co10Hg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f0c14824-29d6-4f95-9710-e15f1e72a6ad/storage_v2/_src_/database/ZapisEKG_development.Co10Hg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f0c14824-29d6-4f95-9710-e15f1e72a6ad/storage_v2/_src_/database/ZapisEKG_development.Co10Hg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4ccd5cd-8dd4-4344-9e24-2b6f6644d27d/storage_v2/_src_/database/ZapisEKG_development.Co10Hg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4ccd5cd-8dd4-4344-9e24-2b6f6644d27d/storage_v2/_src_/database/ZapisEKG_development.Co10Hg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+    <list default="true" id="e59e52e6-ad52-48db-ad8e-f05160e59727" name="Default" comment="Refresh project.">
+      <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -76,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -147,10 +126,10 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/168a3696-a1f6-42c6-af08-5093380db8e8/console.sql" />
         <option value="$PROJECT_DIR$/app/views/user/start.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/user/message.html.erb" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
       </list>
     </option>
   </component>
@@ -503,12 +482,20 @@
       <workItem from="1536752331602" duration="19005000" />
       <workItem from="1536918465429" duration="3882000" />
       <workItem from="1536922372876" duration="58065000" />
-      <workItem from="1550101260293" duration="3910000" />
+      <workItem from="1550101260293" duration="4168000" />
     </task>
+    <task id="LOCAL-00001" summary="Refresh project.">
+      <created>1550105642988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105642988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252025000" />
+    <option name="totallyTimeSpent" value="252283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,6 +560,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refresh project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refresh project." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -875,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
