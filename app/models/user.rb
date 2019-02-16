@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+
+
   has_many :przebiegi
   has_many :messages
   enum role: [:patient, :doctor, :admin]
@@ -12,6 +14,7 @@ class User < ApplicationRecord
     require 'digest/sha2'
     self.password = Digest::SHA2.new << password
   end
+
   validates :first_name, :presence => true
   validates :last_name, :presence => true
   validates :pesel, :presence => true

@@ -14,22 +14,22 @@
 
 <%= form_for "user", :url => { :action => "new" } do |f| %>
 
-  <%= f.label "login" %><br>
+  <%= f.label "Login" %><br>
   <%= f.text_field "login" %><br>
 
-  <%= f.label "password" %><br>
-  <%= f.password_field "password" %><br>
+  <%= f.label "Hasło" %><br>
+  <%= f.password_field  "password" %><br>
 
-  <%= f.label "first_name" %><br>
+  <%= f.label "Imię" %><br>
   <%= f.text_field "first_name" %><br>
 
-  <%= f.label "last_name" %><br>
-  <%= f.text_field "last_name" %><br>
+  <%= f.label "Nazwisko" %><br>
+  <%= f.text_field  "last_name" %><br>
 
-  <%= f.label "pesel" %><br>
-  <%= f.text_field "pesel" %><br>
+  <%= f.label "Numer pesel" %><br>
+  <%= f.text_field  "pesel" %><br>
 
-  <%= f.submit %>
-  <p><a href="/user/login">Masz już konto? Zaloguj!</a></p>
+  <%= f.submit "Załóż konto" %>
+  <p><a href="/user/login">Masz już konto? Zaloguj się!</a></p>
 
 <% end %>

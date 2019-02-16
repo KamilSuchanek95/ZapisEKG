@@ -103,39 +103,33 @@ class UserController < ApplicationController
   end
 
   def edit
-
-    redirect_to :action => "index" if !params[:ciaramba]
-
-    id = session[:user_id]
-    user = User.find(id)
-    if !user.admin?
-      redirect_to :action => "index", :alert =>"Brak uprawnień!"
-    end
+    redirect_to :action => "index" if !params[:ciaramba] #jesli znajdziemy się tu bez danych do edycji
+    redirect_to :action => "start", :alert =>"Brak uprawnień!" if !((User.find(session[:user_id])).admin?)#jezli nie mamy uprawnien
 
     if params[:ciaramba]
       @current_user = User.find(params[:ciaramba])
-      @ciaramba = :ciaramba
+
     end
 
     if params["edit"]
-
       data = {
           "first_name" => params["edit"]["first_name"],
           "last_name" => params["edit"]["last_name"],
           "pesel" => params["edit"]["pesel"],
           "role" => params["edit"]["role"]
       }
+      @current_user = User.find_by id: params["edit"]["user_id"]
 
-      @user = User.find(params[:ciaramba])
-
-      if @user.update_attributes(data)
-        redirect_to :action => "index"
+      if @current_user.update_attributes(data)
+        sleep 1.5
+        flash[:success] = "Dokonano edycji!"
+        #render 'edit' #redirect_to :action => "index"
       else
-        render 'edit'
+        sleep 1.5
+        flash[:error] = "Edycja zakończona niepowodzeniem!"
+        #render 'edit'
       end
     end
-
-
   end
 
   def message
@@ -164,5 +158,11 @@ class UserController < ApplicationController
 
 
 end
+
+  private
+
+  def edit_params
+    params.require(:user).permit(:first_name, :last_name, :pesel, :role, :id)
+  end
 
 end

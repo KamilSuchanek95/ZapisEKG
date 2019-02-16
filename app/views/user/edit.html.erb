@@ -11,21 +11,26 @@
   <% end %>
 <% end %>
 
-<%= form_for "edit", :url => { :action => "edit" }, :remote => true do |f| %>
+<%= form_for "edit", :url => { :action => "edit" } do |f| %>
 
-  <%= f.label "first_name", "Imię" %><br>
+  <%= f.label(:id_uzytkownika, 'ID użytkownika') %><br>
+  <%= f.text_field "user_id", :value => @current_user.id %><br><br>
+
+  <%= f.label "Imię" %><br>
   <%= f.text_field "first_name", :value => @current_user.first_name %><br><br>
 
-  <%= f.label "last_name", "Nazwisko" %><br>
+  <%= f.label "Nazwisko" %><br>
   <%= f.text_field "last_name", :value => @current_user.last_name -%><br><br>
 
-  <%= f.label "pesel", "Pesel" %><br>
+  <%= f.label "Pesel" %><br>
   <%= f.text_field "pesel", :value => @current_user.pesel.to_s %><br><br>
 
-  <%= f.label "role", "Rola" %><br>
+  <%= f.label "Rola" %><br>
   <%= f.select "role", ["patient", "doctor", "admin"], :selected => @current_user.role,:style => "height:30px; width:100px" %><br>
   <br><br><br><br>
+
   <%= f.submit "Zapisz zmiany" %>
+  <br><br><br><br>
   <p><a href="/user/index">Powrót</a></p>
 
 <% end %>

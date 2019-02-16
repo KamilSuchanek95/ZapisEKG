@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ZapisEKG_development" uuid="2e7c4201-e2fa-4550-a35f-8c7dd328df50">
+    <data-source source="LOCAL" name="ZapisEKG_development" uuid="20aee81a-be23-408f-bbb0-00faf7bf5e0f">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
