@@ -10,17 +10,9 @@ class UserController < ApplicationController
       @first_name = user.first_name
       @last_name = user.last_name
 
-
     else
       redirect_to :action => "new"
     end
-
-    @Messages = Message.find_by_receiver_id(@id)
-    if @Messages
-      @sender = User.find(@Messages.sender_id)
-    end
-
-
 
   end
 
@@ -121,43 +113,17 @@ class UserController < ApplicationController
       @current_user = User.find_by id: params["edit"]["user_id"]
 
       if @current_user.update_attributes(data)
-        sleep 1.5
+        #sleep 1.5
         flash[:success] = "Dokonano edycji!"
         #render 'edit' #redirect_to :action => "index"
       else
-        sleep 1.5
+        #sleep 1.5
         flash[:error] = "Edycja zakończona niepowodzeniem!"
         #render 'edit'
       end
     end
   end
 
-  def message
-
-    redirect_to :action => 'profile' if !params[:ciaramba]
-
-
-    @ciaramba = User.find(params[:ciaramba])
-
-
-    if params["Message"]
-
-      data = {
-          "text" => params["Message"]["text"],
-          "sender_id" => session[:user_id],
-          "receiver_id" => params[:ciaramba]
-      }
-
-      @saveMessage = Message.new(data)
-
-      if @saveMessage
-        redirect_to user_profile_path(:ciaramba => params[:ciaramba])
-      end
-
-    end
-
-
-end
 
   private
 

@@ -3,8 +3,7 @@
 <a><%@signal%></a>
 <p><a href="/user/index">Powrót</a></p>
 <p><a href="/user/start">Powrót do strony głównej</a></p>
-<p><a><%= link_to 'Napisz wiadomość', user_message_path(:ciaramba => params[:ciaramba]) %>
-  </a></p>
+
 <%if @signal %>
 
     <% @data_line_chart = [] %>

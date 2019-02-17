@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e59e52e6-ad52-48db-ad8e-f05160e59727" name="Default" comment="Sprawna edycja użytkowników. Dodanie flash[] wyników działania. Inne.">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ZapisEKG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZapisEKG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/168a3696-a1f6-42c6-af08-5093380db8e8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/168a3696-a1f6-42c6-af08-5093380db8e8/storage_v2/_src_/database/ZapisEKG_development.Co10Hg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/168a3696-a1f6-42c6-af08-5093380db8e8/storage_v2/_src_/database/ZapisEKG_development.Co10Hg/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/message.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/message.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/przebiegi.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/przebiegi.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/user/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/user/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/message.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user/message.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user/profile.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/profile.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user/start.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/start.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -37,11 +27,11 @@
     <SUITE FILE_PATH="coverage/ZapisEKG@db_drop__ZapisEKG.rcov" NAME="db:drop: ZapisEKG Coverage Results" MODIFIED="1526905181453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@db_create__ZapisEKG.rcov" NAME="db:create: ZapisEKG Coverage Results" MODIFIED="1527356543926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@Unnamed.rcov" NAME="ZapisEKG_development Coverage Results" MODIFIED="1526713623097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
-    <SUITE FILE_PATH="coverage/ZapisEKG@ZapisEKG_development.rcov" NAME="ZapisEKG_development Coverage Results" MODIFIED="1550301715265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
+    <SUITE FILE_PATH="coverage/ZapisEKG@ZapisEKG_development.rcov" NAME="ZapisEKG_development Coverage Results" MODIFIED="1550427053386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@db_migrate__1_.rcov" NAME="db:migrate (1) Coverage Results" MODIFIED="1527697308521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@db_migrate.rcov" NAME="db:migrate Coverage Results" MODIFIED="1527697296180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
     <SUITE FILE_PATH="coverage/ZapisEKG@routes__ZapisEKG.rcov" NAME="routes: ZapisEKG Coverage Results" MODIFIED="1537034328537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
-    <SUITE FILE_PATH="coverage/ZapisEKG@db_migrate__ZapisEKG.rcov" NAME="db:migrate: ZapisEKG Coverage Results" MODIFIED="1550105340629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
+    <SUITE FILE_PATH="coverage/ZapisEKG@db_migrate__ZapisEKG.rcov" NAME="db:migrate: ZapisEKG Coverage Results" MODIFIED="1550423553374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ZapisEKG" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -54,7 +44,17 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ZapisEKG_development" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ZapisEKG_development" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DockManager">
@@ -87,26 +87,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/user/profile.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="52" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/user/start.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="125" column="36" lean-forward="true" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+            <state relative-caret-position="-613">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#942#1312#0" />
                 <element signature="e#1316#1434#0" />
                 <element signature="e#1438#1657#0" />
                 <element signature="e#1661#1846#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -134,6 +152,63 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://RailsDependency/User">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>RailsDependency</ID>
+              <OriginalElement>User</OriginalElement>
+              <nodes>
+                <node x="54.5" y="308.0">User</node>
+                <node x="0.0" y="81.0">Przebiegi</node>
+                <node x="73.5" y="0.0">ApplicationRecord</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="User" target="ApplicationRecord">
+                  <point x="49.25" y="-124.5" />
+                  <point x="202.25" y="283.0" />
+                  <point x="207.5" y="283.0" />
+                  <point x="207.5" y="56.0" />
+                  <point x="192.75" y="56.0" />
+                  <point x="39.75" y="15.5" />
+                </edge>
+                <edge source="User" target="Przebiegi">
+                  <point x="-49.25" y="-124.5" />
+                  <point x="103.75" y="283.0" />
+                  <point x="98.5" y="283.0" />
+                  <point x="0.0" y="88.5" />
+                </edge>
+                <edge source="Przebiegi" target="ApplicationRecord">
+                  <point x="0.0" y="-88.5" />
+                  <point x="98.5" y="56.0" />
+                  <point x="113.25" y="56.0" />
+                  <point x="-39.75" y="15.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="144.0" y="211.0" />
+              <SelectedNodes>
+                <node>User</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Association fields</Category>
+                <Category>Migration fields</Category>
+                <Category>System DB fields</Category>
+                <Category>Own fields</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -186,10 +261,7 @@
         <option value="$PROJECT_DIR$/app/helpers/user_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/user.scss" />
-        <option value="$PROJECT_DIR$/app/views/user/profile.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/168a3696-a1f6-42c6-af08-5093380db8e8/console.sql" />
-        <option value="$PROJECT_DIR$/app/views/user/start.html.erb" />
         <option value="$PROJECT_DIR$/app/views/user/message.html.erb" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2e7c4201-e2fa-4550-a35f-8c7dd328df50/console.sql" />
@@ -203,7 +275,10 @@
         <option value="$PROJECT_DIR$/app/models/message.rb" />
         <option value="$PROJECT_DIR$/config/initializers/content_security_policy.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/user/start.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/user/profile.html.erb" />
       </list>
     </option>
   </component>
@@ -465,7 +540,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="db:migrate: ZapisEKG" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+    <configuration name="db:migrate: ZapisEKG" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="ZapisEKG" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -523,7 +598,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Rake.db:migrate: ZapisEKG" />
         <item itemvalue="Rake.routes: ZapisEKG" />
         <item itemvalue="Rake.db:migrate" />
         <item itemvalue="Rake.db:create: ZapisEKG" />
@@ -578,7 +652,7 @@
       <workItem from="1550101260293" duration="5515000" />
       <workItem from="1550151930415" duration="2243000" />
       <workItem from="1550181889981" duration="14490000" />
-      <workItem from="1550248907342" duration="16948000" />
+      <workItem from="1550248907342" duration="23904000" />
     </task>
     <task id="LOCAL-00001" summary="Refresh project.">
       <created>1550105642988</created>
@@ -594,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550105813390</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sprawna edycja użytkowników. Dodanie flash[] wyników działania. Inne.">
+      <created>1550306014947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550306014947</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287311000" />
+    <option name="totallyTimeSpent" value="294267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,30 +692,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="864" y="27" width="1056" height="1053" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1990099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49944752" visible="true" weight="0.27705628" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980198" visible="true" weight="0.27705628" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38552916" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879582" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4491342" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4990099" weight="0.4491342" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32857144" />
       <window_info active="true" anchor="bottom" id="Database Console" order="11" visible="true" weight="0.31601733" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005525" side_tool="true" weight="0.32359308" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5009901" side_tool="true" weight="0.4491342" />
       <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.32879582" />
       <window_info anchor="bottom" id="Get Gist" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32792208" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.36188436" />
+      <window_info anchor="right" id="Database" order="3" weight="0.36138615" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19638826" />
@@ -779,20 +861,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/user/message.erb" />
     <entry file="das://168a3696-a1f6-42c6-af08-5093380db8e8/database/ZapisEKG_development/schema/public/table/messages" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/168a3696-a1f6-42c6-af08-5093380db8e8/console.sql" />
-    <entry file="file://$PROJECT_DIR$/app/views/user/message.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/start.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ruby-version">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -821,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -839,13 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/profile.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -1023,37 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://RailsDependency/User">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>User</OriginalElement>
-          <nodes>
-            <node x="" y="">Message</node>
-            <node x="" y="">User</node>
-            <node x="" y="">Przebiegi</node>
-            <node x="" y="">ApplicationRecord</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.6655844155844156" x="142.0" y="452.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Association fields</Category>
-            <Category>Migration fields</Category>
-            <Category>System DB fields</Category>
-            <Category>Own fields</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/20aee81a-be23-408f-bbb0-00faf7bf5e0f/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1075,13 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1096,16 +1112,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/20aee81a-be23-408f-bbb0-00faf7bf5e0f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/message.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/User">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>User</OriginalElement>
+          <nodes>
+            <node x="54.5" y="308.0">User</node>
+            <node x="0.0" y="81.0">Przebiegi</node>
+            <node x="73.5" y="0.0">ApplicationRecord</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="User" target="ApplicationRecord">
+              <point x="49.25" y="-124.5" />
+              <point x="202.25" y="283.0" />
+              <point x="207.5" y="283.0" />
+              <point x="207.5" y="56.0" />
+              <point x="192.75" y="56.0" />
+              <point x="39.75" y="15.5" />
+            </edge>
+            <edge source="User" target="Przebiegi">
+              <point x="-49.25" y="-124.5" />
+              <point x="103.75" y="283.0" />
+              <point x="98.5" y="283.0" />
+              <point x="0.0" y="88.5" />
+            </edge>
+            <edge source="Przebiegi" target="ApplicationRecord">
+              <point x="0.0" y="-88.5" />
+              <point x="98.5" y="56.0" />
+              <point x="113.25" y="56.0" />
+              <point x="-39.75" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="144.0" y="211.0" />
+          <SelectedNodes>
+            <node>User</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+            <Category>System DB fields</Category>
+            <Category>Own fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="125" column="36" lean-forward="true" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+        <state relative-caret-position="-613">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#942#1312#0" />
             <element signature="e#1316#1434#0" />
             <element signature="e#1438#1657#0" />
             <element signature="e#1661#1846#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/start.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/profile.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
