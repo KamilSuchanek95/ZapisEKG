@@ -1,8 +1,9 @@
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
 <h1>Profil użytkownika <%=@user.first_name%> <%=@user.last_name%></h1>
 <a><%@signal%></a>
-<p><a href="/user/index">Powrót</a></p>
+<p><%= link_to 'Wstecz', :back %></p><!--
 <p><a href="/user/start">Powrót do strony głównej</a></p>
+-->
 
 <%if @signal %>
 
@@ -33,7 +34,7 @@
   <thead>
 
   <tr>
-    <td class = "czerwony">Id</td>
+    <td class = "czerwony">ID</td>
     <td>Data załadowania zapisu</td>
     <td></td>
   </tr>

@@ -6,9 +6,9 @@ class UserController < ApplicationController
 
       @id = session[:user_id]
 
-      user = User.find(@id)
-      @first_name = user.first_name
-      @last_name = user.last_name
+      @user = User.find(@id)
+      #@first_name = user.first_name
+      #@last_name = user.last_name
 
     else
       redirect_to :action => "new"
@@ -69,7 +69,14 @@ class UserController < ApplicationController
 
   def profile
 
-    @user = User.find(params[:ciaramba])
+    if params[:ciaramba]
+      @user = User.find(params[:ciaramba])
+    else
+      redirect_to :action => "start"
+    end
+
+    redirect_to :action => "start" if not((User.find(params[:ciaramba])).admin? || params[:ciaramba].equal?(session[:user_id]))
+
 
     @SIG = Przebiegi.where(user_id: @user.id).all
 

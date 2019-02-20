@@ -1,5 +1,5 @@
-<h1>Zalogowany jako <%= @first_name %> <%= @last_name %> </h1>
+<h1>Zalogowany jako <%= @user.first_name %> <%= @user.last_name %> </h1>
 <p></p>
 <p><a href="/user/logout">Wyloguj</a></p>
 <p><a href="/user/index">Lista Użytkowników</a></p>
-
+<%=h link_to 'Profil', user_profile_path(:ciaramba => @user.id) %>
