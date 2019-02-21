@@ -2,23 +2,24 @@ class UserController < ApplicationController
 
   def start
 
-    if session[:user_id]
-
-      @id = session[:user_id]
-
-      @user = User.find(@id)
-      #@first_name = user.first_name
-      #@last_name = user.last_name
-
+    if session[:user_id] && User.exists?(session[:user_id])
+        @user = User.find(session[:user_id])
     else
       redirect_to :action => "new"
     end
+
+    @skrzynka = Message.all.where(:receiver_id==session[:user_id])
+    @data_of_senders = []
+    @skrzynka.each do |skrzynka|
+      i = skrzynka.sender_id
+      @data_of_senders << ((User.find(i)).first_name + " " + (User.find(i)).last_name)
+      end
 
   end
 
   def new
 
-    redirect_to :action => "start" if session[:user_id]
+    redirect_to :action => "start" if User.exists?(session[:user_id])
 
     if params["user"]
 
@@ -75,7 +76,10 @@ class UserController < ApplicationController
       redirect_to :action => "start"
     end
 
-    redirect_to :action => "start" if not((User.find(params[:ciaramba])).admin? || params[:ciaramba].equal?(session[:user_id]))
+    if @user.admin? || @user.doctor? || @user.id==session[:user_id]
+    else
+    redirect_to :action => "start"
+    end
 
 
     @SIG = Przebiegi.where(user_id: @user.id).all

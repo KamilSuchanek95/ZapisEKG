@@ -1,12 +1,13 @@
 
 
 <div id="menu">
-  <h3>Logowanie</h3>
+  <h3>Panel logowania</h3>
   <form method="POST" action="/user/login">
-    <label for="user">User:</label><input type="text" name="login[login]" id="user"><br>
-    <label for="password">Password:</label><input type="password" name="login[password]" id="password"><br>
+    <label for="user"></label><input type="text" name="login[login]" id="user" value="Login"><br>
+    <label for="password"></label><input type="password" name="login[password]" id="password" value="Hasło"><br>
     <input type="submit" value = "Zaloguj!">
     <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-    <p><a href="/user/new">Zarejestruj się!</a></p>
+    <p></p>
+    <p><a href="/user/new">Nie masz jeszcze konta? Zarejestruj się!</a></p>
   </form>
 </div>

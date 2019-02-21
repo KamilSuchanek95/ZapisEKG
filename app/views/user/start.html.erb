@@ -1,5 +1,32 @@
 <h1>Zalogowany jako <%= @user.first_name %> <%= @user.last_name %> </h1>
 <p></p>
 <p><a href="/user/logout">Wyloguj</a></p>
+<% if @user.admin? %>
 <p><a href="/user/index">Lista Użytkowników</a></p>
-<%=h link_to 'Profil', user_profile_path(:ciaramba => @user.id) %>
+<% end %>
+<%=h link_to 'Pokaż mój profil', user_profile_path(:ciaramba => @user.id) %>
+<br><br><br><br>
+<% if @skrzynka %>
+  <dt> Skrzynka na wiadomości: </dt>
+  <% (0..@skrzynka.length-1).each do |m| %>
+    <% i=m %>
+  <dt> <%= @data_of_senders[i]%> nadał <%= @skrzynka[i].message_time %></dt>
+  <dd> <%= @skrzynka[i].message %> </dd>
+  <% end %>
+
+<% end %>
+
+<!--
+<%= form_for "skrzynka", :url => { :action => "start" } do |f| %>
+
+  <%= f.label "Skrzynka na wiadomości" %><br>
+  <%= f.text_field "pesel", :value =>1 %><br><br>
+
+  <br><br><br><br>
+
+  <%= f.submit "Wyślij wiadomość" %>
+  <br><br><br><br>
+  <p><a href="/user/index">Powrót</a></p>
+
+<% end %>
+-->

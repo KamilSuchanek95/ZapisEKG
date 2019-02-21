@@ -5,9 +5,20 @@ class User < ApplicationRecord
   has_many :messages
   enum role: [:patient, :doctor, :admin]
   after_initialize :set_default_role, :if => :new_record?
+  after_create :send_default_messages
+  after_destroy :clear_all_messages
+
+  def clear_all_messages
+    Message.where(receiver_id==self.id).destroy_all
+  end
 
   def set_default_role
     self.role ||= :patient
+  end
+
+  def send_default_messages
+    Message.new({"message" => "Witaj nowy użytkowniku!", "sender_id" => 1, "receiver_id" => self.id})
+    Message.new({"message" => "Tutaj możesz odczytać przychodzące wiadomości!", "sender_id" => 1, "receiver_id" => self.id})
   end
 
   def hash_password
