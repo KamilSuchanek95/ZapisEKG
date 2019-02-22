@@ -8,12 +8,17 @@ class UserController < ApplicationController
       redirect_to :action => "new"
     end
 
-    @skrzynka = Message.all.where(:receiver_id==session[:user_id])
-    @data_of_senders = []
-    @skrzynka.each do |skrzynka|
-      i = skrzynka.sender_id
-      @data_of_senders << ((User.find(i)).first_name + " " + (User.find(i)).last_name)
+    if Message.find_by_receiver_id(session[:user_id])
+      @skrzynka = Message.where(receiver_id: session[:user_id]).all.reverse
+      #@SIG = Przebiegi.where(user_id: @user.id).all
+
+      @data_of_senders = []
+      @skrzynka.each do |skrzynka|
+        i = skrzynka.sender_id
+        @data_of_senders << ((User.find(i)).first_name + " " + (User.find(i)).last_name)
       end
+    end
+
 
   end
 
@@ -75,10 +80,10 @@ class UserController < ApplicationController
     else
       redirect_to :action => "start"
     end
-
-    if @user.admin? || @user.doctor? || @user.id==session[:user_id]
+    user = User.find(session[:user_id])
+    if user.admin? || user.doctor? || @user.id==session[:user_id].to_i
     else
-    redirect_to :action => "start"
+      redirect_to :action => "start"
     end
 
 
@@ -90,7 +95,6 @@ class UserController < ApplicationController
       @signal1 = @signal.zapis
 
     end
-
 
   end
 

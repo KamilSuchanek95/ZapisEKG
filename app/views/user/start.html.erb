@@ -6,12 +6,18 @@
 <% end %>
 <%=h link_to 'Pokaż mój profil', user_profile_path(:ciaramba => @user.id) %>
 <br><br><br><br>
+
+<% skrzynka=[] %>
+<% skrzynka << @skrzynka %>
 <% if @skrzynka %>
-  <dt> Skrzynka na wiadomości: </dt>
+  <dt> Skrzynka na wiadomości: </dt>  <br>
+
   <% (0..@skrzynka.length-1).each do |m| %>
     <% i=m %>
-  <dt> <%= @data_of_senders[i]%> nadał <%= @skrzynka[i].message_time %></dt>
+    <%= @skrzynka[i].message_time %>
+  <dt> <%= @data_of_senders[i]%> </dt>
   <dd> <%= @skrzynka[i].message %> </dd>
+    <br>
   <% end %>
 
 <% end %>
